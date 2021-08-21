@@ -148,4 +148,5 @@ document.getElementById('cuopon').addEventListener('click', function(){
     const finalAmount = (beforeCuopon * .8);
     bonusRaw.innerText = finalAmount;
 }
+cuoponField.value = '';
 })
