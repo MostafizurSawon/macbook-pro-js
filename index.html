@@ -5,114 +5,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Macbook Kinboi kinbo</title>
-
-    <!-- bootstrap here -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>MacBook Kinboi</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-
-    </header>
-
     <main>
-        <section class="container d-flex justify-content-center">
-            <div class="col-lg-6 p-5">
-                <div>
-                    <img class="img-fluid" src="images/mac.png" alt="">
+        <section class="container">
+            <div class="row justify-content-center gx-4 mt-5">
+                <div class="col-12 col-md-5 col-sm-10">
+                    <img src="images/mac.png" class="w-100" alt="">
                 </div>
-            </div>
-            <div class="col-lg-6 p-3">
-                <div class="mb-3">
-                    <h2>Customize your blue 24-inch <br> iMac with Apple M1 chip.</h2>
-                    <p>The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central
-                        processing unit and graphics processing unit for its Macintosh computers and iPad Pro tablets.
-                        It was inspired by their Apple A14 Bionic chip.</p>
-                </div>
-                <div>
-                    <div class="my-5">
-                        <h6>Memory</h6>
-                        <button id="eight-gb-ram" class="btn btn-light border">8GB unified memory</button>
-                        <button id="sixteen-gb-ram" class="btn btn-light border">16GB unified memory</button>
-                    </div>
-                    <div class="my-3">
-                        <h6>Storage</h6>
-                        <button id="two-fifty-six" class="btn btn-light border">256GB SSD storage</button>
-                        <button id="five-twelve" class="btn btn-light border">512GB SSD storage</button>
-                        <button id="one-tera" class="btn btn-light border">1TB SSD storage</button>
-                    </div>
-                    <div class="my-5">
-                        <h6>Choose your delivery option</h6>
-                        <button id="free-delivery" class="btn btn-light border">Friday, 25 Aug 25 FREE Prime
-                            Delivery</button>
-                        <button id="premium-delivery" class="btn btn-light border">Friday, 25 Aug 21 Delivery chare
-                            $20</button>
-                    </div>
+                <div class="col-12 col-md-6">
                     <div>
-                        <div class="row justify-content-start">
-                            <div class="col-4">
-                                <h6>Best Price</h6>
-                            </div>
-                            <div class="col-4">
-                                <h6>$<span id="raw-price">1299</span></h6>
-                            </div>
-                        </div>
-                        <div class="row justify-content-start">
-                            <div class="col-4">
-                                <h6>Extra Memory Cost</h6>
-                            </div>
-                            <div class="col-4">
-                                <h6>$<span id="update-ram">0</span></h6>
-                            </div>
-                        </div>
-                        <div class="row justify-content-start">
-                            <div class="col-4">
-                                <h6>Extra Storage Cost</h6>
-                            </div>
-                            <div class="col-4">
-                                <h6>$<span id="update-storage">0</span></h6>
-                            </div>
-                        </div>
-                        <div class="row justify-content-start border-bottom">
-                            <div class="col-4">
-                                <h6>Delivery Charge</h6>
-                            </div>
-                            <div class="col-4">
-                                <h6>$<span id="update-delivery">0</span></h6>
-                            </div>
-                        </div>
-                        <div class="row justify-content-start">
-                            <div class="col-4">
-                                <h6>Total Price</h6>
-                            </div>
-                            <div class="col-4">
-                                <h6>$<span id="total">1299</span></h6>
-                            </div>
-                        </div>
-                        <div class="my-4">
-                            <h6>Add Promo Code</h6>
-                            <input id="inputCuopon" class="form-control w-50 d-inline" type="text">
-                            <button id="cuopon" class="btn btn-danger">Apply</button>
-                        </div>
+                        <h2>Customize your blue 24-inch <br> iMac with Apple M1 chip.</h2>
+                        <p>The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central
+                            processing unit and graphics processing unit for its Macintosh computers and iPad Pro
+                            tablets.
+                            It was inspired by their Apple A14 Bionic chip.</p>
+                    </div>
 
+                    <div class="mt-5">
+                        <h5>Memory</h5>
+                        <button type="button" id="normal-ram-btn" class="btn btn-light border">8GB Unified
+                            Memory</button>
+                        <button class="btn btn-light border" type="button" id="extra-ram-btn">16GB Unified
+                            Memory</button>
+
+                        <h5 class="mt-5">Storage</h5>
+                        <button class="btn btn-light border" id="basic-ssd">256GB SSD Storage</button>
+                        <button class="btn btn-light border" id="mid-ssd">512GB SSD Storage</button>
+                        <button class="btn btn-light border" id="premium-ssd">1TB SSD Storage</button>
+
+                        <h5 class="mt-5">Choose Your Delivery Option</h5>
+                        <button class="btn btn-light border" type="button" id="free-delivery-btn">Friday, for free
+                            Delivery</button>
+                        <button class="btn btn-light border" type="button" id="fast-delivery-btn">Next day
+                            Delivery charge $20</button>
+                    </div>
+
+                    <div class="row mt-5 mb-5">
+                        <div class="col-md-6 col-12">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            Best Price
+                                        </th>
+                                        <td class="fw-bold">
+                                            $<span id="best-price">1299</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Extra Memory Cost
+                                        </th>
+                                        <td class="fw-bold">
+                                            $<span id="ram-price">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Extra Storage Cost
+                                        </th>
+                                        <td class="fw-bold">
+                                            $<span id="ssd-price">0</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            Delivery Charge
+                                        </th>
+                                        <td class="fw-bold">
+                                            $<span id="delivery-cost">0</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="row">
+                                            Total Price
+                                        </th>
+                                        <td class="fw-bold">
+                                            $<span id="total-price" class="text-danger">1299</span>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+
+                    <div class="promo-code mb-5">
+                        <h4>Your Promo Code</h4>
+                        <input type="text" name="" id="promo-code-input" placeholder="Enter Your Discount Code">
+                        <button id="promo-code-apply-btn" type="submit" class="btn btn-danger">Apply</button>
                     </div>
                 </div>
             </div>
             <hr>
-
         </section>
-
-        <section>
-            <h2 class="text-center">Total: $<span id="bonus-total">1299</span></h2>
-        </section>
-
+        <div class="container mt-5">
+            <div class="footer-total text-center">
+                <h1>Total: $<span id="grand-total" class="text-danger">1299</span></h1>
+            </div>
+        </div>
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="js/main.js"></script>
 </body>
