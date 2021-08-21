@@ -37,11 +37,11 @@ addButtonListeners("mid-ssd", "ssd-price", 100);
 addButtonListeners("premium-ssd", "ssd-price", 180);
 
 // DELIVERY COST BUTTON
-addButtonListeners("free-delivery-btn", "delivery-cost", 0);
-addButtonListeners("fast-delivery-btn", "delivery-cost", 20);
+addButtonListeners("free-delivery", "delivery-cost", 0);
+addButtonListeners("premium-delivery", "delivery-cost", 20);
 
 // CUPPON CODE HANDLER 
-document.getElementById("promo-code-apply-btn").addEventListener("click", function () {
+document.getElementById("promo-apply").addEventListener("click", function () {
     const totalPrice = parseFloat(document.getElementById("total-price").innerText);
     const promoCode = document.getElementById("promo-code-input");
 
